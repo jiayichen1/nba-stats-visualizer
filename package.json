@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/jiayichen1/nba-stats-visualizer#readme",
   "dependencies": {
-    "react": "^16.11.0"
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0"
   }
 }
