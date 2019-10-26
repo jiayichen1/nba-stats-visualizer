@@ -29,6 +29,7 @@
     "babel-preset-react": "^6.24.1",
     "nba-api-client": "^1.0.6",
     "react": "^16.11.0",
-    "react-dom": "^16.11.0"
+    "react-dom": "^16.11.0",
+    "webpack": "^4.41.2"
   }
 }
