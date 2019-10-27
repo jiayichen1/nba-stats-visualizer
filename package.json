@@ -32,6 +32,7 @@
     "prop-types": "^15.7.2",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
+    "react-vis": "^1.11.7",
     "webpack": "^4.41.2",
     "webpack-dev-server": "^3.9.0"
   }
