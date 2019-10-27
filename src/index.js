@@ -2,6 +2,7 @@ import React from "react";
 import { render } from "react-dom";
 
 import Autocomplete from "./App/components/Autocomplete";
+import {BasicRadarChart} from "./App/components/radar-chart-series-tooltips"
 
 function App() {
 	return (
@@ -508,4 +509,4 @@ function App() {
   	);
 }
 
-render(<App />, document.getElementById('autocomplete'));
+render(<BasicRadarChart />, document.getElementById('autocomplete'));
