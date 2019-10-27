@@ -4,7 +4,8 @@
   "description": "first version of nba-stats-visualizer",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "react-scripts start",
+    "build": "react-scripts build"
   },
   "repository": {
     "type": "git",
@@ -32,8 +33,24 @@
     "prop-types": "^15.7.2",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
+<<<<<<< HEAD
     "react-vis": "^1.11.7",
+=======
+    "react-scripts": "^3.2.0",
+>>>>>>> 3d03df6ac9810c128400b1a84683ee9db380d52e
     "webpack": "^4.41.2",
     "webpack-dev-server": "^3.9.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
