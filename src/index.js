@@ -1,6 +1,7 @@
 import React from "react";
 import { render } from "react-dom";
 
-import App from "./App/app";
+import App from "./App";
+import OffenseRadarChart from "./components/offenseRadarChart"
 
-render(<App />, document.getElementById('autocomplete'));
+render(<OffenseRadarChart />, document.getElementById('autocomplete'));
