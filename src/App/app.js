@@ -1,15 +1,31 @@
 import React from "react";
-import { render } from "react-dom";
+import { render, ReactDOM } from "react-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  useLocation
+} from "react-router-dom";
 
 import Autocomplete from "./components/Autocomplete";
 import names from "./components/allCurrentPlayersNames";
 
-function App() {
-	return (
-	<div>
-		<h1> This is nba stat visualizer Autocomplete demo </h1>
-		<Autocomplete suggestions = {names} />
-  	</div>
-  	);
+function usePageViews() {
+  let location = useLocation();
+  React.useEffect(() => {
+    ga.send(["pageview", location.pathname]);
+  }, [location]);
 }
+
+
+function App(){
+	usePageViews();
+	return (
+        <form onSubmit={this.handleSubmit}>
+            <Autocomplete suggestions = {names} />
+			<input type="submit"></input>
+        </form>
+    )
+}
+
+
 export default App;
