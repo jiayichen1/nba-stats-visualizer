@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>How good is he - a highly customizble nba stat visualizer</title>
+    <link href="{% static 'css/index.css' %}" rel="stylesheet" type="text/css">
+    <script src="{% static 'js/video_play.js' %}"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <script src="{% static 'js/jquery-3.4.1.min.js' %} "></script>
+    <script src="{% static 'js/bootstrap.min.js' %} "></script>
+    <script src="{% static 'js/typeahead.bundle.js' %} "></script>
+    <script src="{% static 'js/autocomplete.js' %} "></script>
+</head>
+<body>
+    <div id="container">
+        <video id="background_video" loop muted></video>
+        <div id="video_cover"></div>
+        <div id="overlay"></div>
+        <section id="search">
+            <span></span><h1> This is nba stat visualizer Autocomplete demo </h1>
+            <form id="search-bar">
+                <input type="text" name="name" class="typeahead name_query" placeholder="Input a player's name to check out how good is he" autocomplete="off" data-url="{% static 'stats/active_names.json'%}">
+                <button type="submit">Search</button>
+            </form id>
+        </section>
+    </div>
+    
+    <script src="{% static 'js/bideo.js' %}"></script>
+    <script src="{% static 'js/index.js' %}"></script>
+</body>
